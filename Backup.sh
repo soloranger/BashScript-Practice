@@ -31,7 +31,6 @@ backup_path=$(create_backup "$src_path" "$Backup_name")
 echo "Backup created at $backup_path"
 echo "Compressing backup has been Started..."
 Zip_path=$(compress_backup "$backup_path")
-#echo "$Zip_path"
 
 echo "Send file to Minio..."
 send_Minio "${backup_path}.tar.gz"
