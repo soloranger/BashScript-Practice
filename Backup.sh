@@ -32,5 +32,5 @@ echo "Backup created at $backup_path"
 echo "Compressing backup has been Started..."
 Zip_path=$(compress_backup "$backup_path")
 
-echo "Send file to Minio..."
+echo "Send file to Minio...."
 send_Minio "${backup_path}.tar.gz"
