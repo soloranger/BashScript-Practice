@@ -1,3 +1,4 @@
+#!/bin/bash
 create_backup() {
   src_path=$1
   Backup_name=$2
